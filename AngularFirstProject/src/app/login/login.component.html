@@ -1,0 +1,26 @@
+<div class="login-container">
+    <img src="assets/images/logo.png" alt="somepic" class="film">
+    <div class="logo">Movies</div>
+    <div class="desc">
+
+      A film – also called a movie, motion picture, moving picture, picture or photoplay – is a work of visual art that simulates experiences and otherwise communicates ideas, stories, perceptions, feelings, beauty, or atmosphere through the use of moving images. These images are generally accompanied by sound and, more rarely, other sensory stimulations.[1] The word "cinema", short for cinematography, is often used to refer to filmmaking and the film industry, and to the art form that is the result of it.
+    </div>
+    <div class="login-form">
+      
+      <div class="form-group">
+        <label for="uname"> Username</label>
+        <input type="text" name="uname" class="form-control" [(ngModel)]="username">
+      </div>
+
+      <div class="form-group">
+        <label for="pword">Password</label>
+        <input type="password" name="pword" class="form-control" [(ngModel)]="password">
+      </div>
+
+      <div class="btn-container">
+        <div class="error">{{errorMsg}}</div>
+        <button class="btn btn-dark" (click)="login()">Submit</button>
+      </div>
+
+    </div>
+</div>
